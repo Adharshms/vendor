@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://source.unsplash.com/1600x900/?market,vendor') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero button {
+            background: #ffcc00;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .hero button:hover {
+            background: #e6b800;
+            transform: scale(1.05);
+        }
+
+        /* Products */
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        /* Services */
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .service {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .service i {
+            font-size: 40px;
+            color: #ff4b2b;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vendor Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Our Vendor Marketplace</h2>
+        <p>Find the best products and services from trusted vendors.</p>
+        <button onclick="alert('Explore More!')">Explore More</button>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://source.unsplash.com/150x150/?electronics" alt="Product 1">
+                <h3>Smartphone</h3>
+                <p>$699.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://source.unsplash.com/150x150/?fashion" alt="Product 2">
+                <h3>Fashion Shoes</h3>
+                <p>$89.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your products delivered quickly.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>We're here to help anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vendor Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
